@@ -1,11 +1,20 @@
 import Head from "next/head"
 
+import Banner from "../components/Banner"
+import Nav from "../components/Nav"
+import Main from "../components/Main"
+
 export default function Home() {
   return (
 
-    <div className='Shop'>
+    <div className='Index'>
 
     <Head>
+      {/* Fonts */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
       {/* Primary Meta Tags */}
       <title>Protect Corals - Home</title>
       <meta name="title" content="Protect Corals" />
@@ -26,7 +35,9 @@ export default function Home() {
       <meta property="twitter:image" content="https://protectcorals.netlify.appassets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
     </Head>
     
-  <h1> Home </h1>
+    <Banner />
+    <Nav />
+    <Main />
 
   </div>
 
