@@ -87,10 +87,13 @@ body {
 }
 
 
-.main--background {
+.main {
   background-image: url("https://github.com/codeyStein/ProtectCorals/blob/main/images/background--main.png?raw=true");
 
-  min-height: 500px; 
+  margin: 0 0;
+  display: flex;
+
+  min-height: 810px;
 
   background-attachment: fixed;
   background-position: center;
