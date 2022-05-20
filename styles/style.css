@@ -54,17 +54,13 @@ body {
   color: var(--clr-blue-light);
 }
 
-nav {
-  height: 5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 
-  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
-}
 
 .nav--list {
+  background: var(--clr-white);
+  box-shadow: 0px 0px 10px #cfd8dc;
+  padding: 1rem 0;
+  margin: 0 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -77,10 +73,27 @@ nav {
 
 .nav--item a {
   text-decoration: none;
-  font-size: 1.5rem;
+  color: var(--clr-black);
+  transition: all 200ms ease-in;
 }
 
-.nav--item img {
-  height: 3rem;
+.nav--item:first-child {
   margin-right: auto;
+  margin-left: 2rem;
+}
+
+.nav--item a:hover {
+  color: var(--clr-blue);
+}
+
+
+.main--background {
+  background-image: url("img_parallax.jpg");
+
+  min-height: 500px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
