@@ -6,7 +6,7 @@ export default function Nav() {
     <ul class="nav--list">
       <li class="nav--item">
         <a href="#">
-          <img src="https://user-images.githubusercontent.com/97049247/169415230-3b482532-4730-4985-8a67-9b8746ebdc80.png"/>
+          <img src="https://github.com/codeyStein/ProtectCorals/blob/main/images/logo-nav.png?raw=true"/>
         </a>
       </li>
       <li class="nav--item">
