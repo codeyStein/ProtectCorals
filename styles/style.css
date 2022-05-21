@@ -121,6 +121,8 @@ body {
 
   text-align: left;
 
+  animation: fadeinHeader 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms;
+
 }
 
 .main--button {
@@ -141,10 +143,34 @@ body {
   cursor: pointer;
   transition: all 200ms cubic-bezier(0, 0, 0.5, 1);
 
+  animation: fadein-leftHeader 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms;
+
 }
 
 .main--button:hover,.main--button:focus {
   transform: translateY(-10px);
   cursor: pointer;
   box-shadow: 0px 1rem 1.5rem var(--clr-translucent);
+}
+
+@keyframes fadeinHeader {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+    to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein-leftHeader {
+  from {
+    transform: translateX(-16px);
+    opacity: 0;
+  }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
