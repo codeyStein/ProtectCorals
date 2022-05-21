@@ -92,7 +92,7 @@ body {
 
 /* main styles*/
 .main {
-  background-image: url("https://github.com/codeyStein/ProtectCorals/blob/main/images/background--main.png?raw=true");
+  background-image: url("/images/background-mainjpg.jpg");
 
   margin: 0 0;
   display: flex;

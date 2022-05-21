@@ -1,12 +1,16 @@
+import Image from "next/image"
 
 export default function Nav() {
+
+  const navImage = "/images/logo-nav.png"
+  
   return (
     <div className="nav">
       <nav>
       <ul className="nav--list">
         <li className="nav--item">
           <a href="#">
-            <img src="https://github.com/codeyStein/ProtectCorals/blob/main/images/logo-nav.png?raw=true" alt="ProtectCorals Navbar Logo"/>
+            <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48"/>
           </a>
         </li>
         <li className="nav--item">
