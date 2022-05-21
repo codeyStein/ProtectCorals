@@ -120,7 +120,7 @@ body {
   color: var(--clr-white);
 
   font-weight: 500;
-  font-size: 6.5rem;
+  font-size: calc(0.75rem + 5vmin);
   margin-bottom: 1rem;
 
   width: 100%;
@@ -185,16 +185,8 @@ body {
 
 
 /* MediaQueries */
-@media screen and (max-width: 1200px) {
-  .main--header {
-    font-size: 5rem;
-  }
-}
 
 @media screen and (max-width: 850px) {
-  .main--header {
-    font-size: 3.5rem;
-  }
   .main--button {
     height: 3.5rem;
     width: 18rem;
@@ -213,9 +205,6 @@ body {
 
 
 @media screen and (max-width: 600px) {
-  .main--header {
-    font-size: 3rem;
-  }
   .main--button {
     height: 3.5rem;
     width: 16rem;
@@ -224,9 +213,6 @@ body {
 }
 
 @media screen and (max-width: 516px) {
-  .main--header {
-    font-size: 2.5rem;
-  }
   .main--button {
     height: 3.5rem;
     width: 16rem;
@@ -244,9 +230,6 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-  .main--header {
-    font-size: 2rem;
-  }
   .main--button {
     height: 3.2rem;
     width: 12rem;
