@@ -10,20 +10,26 @@
 
 }
 
+
 html,
 body {
   padding: 0;
   margin: 0;
+
   font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
 }
 
+
+/* Banner Styles*/
 .banner {
   width: 100%;
-  height: 4.5rem;
+  height: 3.7rem;
   background: var(--clr-blue-light);
 
   display: flex;
@@ -31,10 +37,8 @@ body {
   align-items: center;
 }
 
-
-/* Banner Styles*/
 .banner--content {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-right: 1rem;
 }
 
@@ -55,7 +59,7 @@ body {
 }
 
 
-
+/* Nav Styles */
 .nav--list {
   background: var(--clr-white);
   box-shadow: 0px 1rem 1.5rem var(--clr-translucent);
@@ -86,7 +90,7 @@ body {
   color: var(--clr-blue);
 }
 
-
+/* main styles*/
 .main {
   background-image: url("https://github.com/codeyStein/ProtectCorals/blob/main/images/background--main.png?raw=true");
 
@@ -118,6 +122,8 @@ body {
   font-weight: 500;
   font-size: 6.5rem;
   margin-bottom: 1rem;
+
+  width: 100%;
 
   text-align: left;
 
@@ -153,6 +159,8 @@ body {
   box-shadow: 0px 1rem 1.5rem var(--clr-translucent);
 }
 
+
+/* Keyframes*/
 @keyframes fadeinHeader {
   from {
     transform: translateY(-16px);
@@ -173,4 +181,76 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+
+/* MediaQueries */
+@media screen and (max-width: 1200px) {
+  .main--header {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main--header {
+    font-size: 3.5rem;
+  }
+  .main--button {
+    height: 3.5rem;
+    width: 18rem;
+    font-size: 1.5rem;   
+  }
+
+  .banner--content {
+    font-size: 0.8rem;
+  }
+  .banner--button {
+    height: 2rem;
+    width: 10rem;
+    font-size: 0.7rem;   
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .main--header {
+    font-size: 3rem;
+  }
+  .main--button {
+    height: 3.5rem;
+    width: 16rem;
+    font-size: 1.2rem;   
+  }
+}
+
+@media screen and (max-width: 516px) {
+  .main--header {
+    font-size: 2.5rem;
+  }
+  .main--button {
+    height: 3.5rem;
+    width: 16rem;
+    font-size: 1.2rem;   
+  }
+
+  .banner--content {
+    font-size: 0.6rem;
+  }
+  .banner--button {
+    height: 2rem;
+    width: 8rem;
+    font-size: 0.6rem;   
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main--header {
+    font-size: 2rem;
+  }
+  .main--button {
+    height: 3.2rem;
+    width: 12rem;
+    font-size: 1rem;   
+  }
+
 }
