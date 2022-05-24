@@ -1,38 +1,36 @@
+import React from "react"
 import Image from "next/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
 
   const navImage = "/images/logo-nav.png"
+
+  const [linksVisible, setLinksVisible] = React.useState(false)
+
+  function toggleLinks() {
+    setLinksVisible(prevValue => !prevValue)
+    console.log(linksVisible)
+  }
   
   return (
     <div className="nav">
       <nav>
-      <ul className="nav--list">
-        <li className="nav--item">
-          <a href="#">
-            <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48"/>
-          </a>
-        </li>
-        <li className="nav--item">
+      <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48"/> </a>
+      <div className="nav--list" id={linksVisible ? "hidden" : ""}>
           <a href="#">Home</a>
-        </li>
-        <li className="nav--item">
           <a href="#">About Us</a>
-        </li>
-        <li className="nav--item">
           <a href="#">Shop</a>
-        </li>
-        <li className="nav--item">
           <a href="#">Donate</a>
-        </li>
-        <li className="nav--item">
           <a href="#">Join Us</a>
-        </li>
-        <li className="nav--item">
           <a href="#">Contact</a>
-        </li>
-      </ul>
+      </div>
+      <button className="nav--icon" onClick={toggleLinks}> <FontAwesomeIcon icon={faBars} style={{ fontSize: 40}}/> </button>
     </nav>
+    
   </div>
   )
 }
