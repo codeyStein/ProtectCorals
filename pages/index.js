@@ -3,11 +3,13 @@ import Head from "next/head"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import Main from "../components/Main"
+import React from "react"
 
 export default function Home() {
+
   return (
 
-    <div className='Index'>
+      <div className="Index">
 
     <Head>
       {/* Fonts */}
@@ -38,8 +40,7 @@ export default function Home() {
     <Banner />
     <Nav />
     <Main />
-
-  </div>
-
+  
+    </div>
   )
 }

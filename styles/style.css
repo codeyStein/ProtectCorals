@@ -26,6 +26,7 @@ body {
 }
 
 
+
 /* Banner Styles*/
 .banner {
   width: 100%;
@@ -138,7 +139,7 @@ nav button {
   justify-content: center;
   align-items: center;
 
-  min-height: 810px;
+  min-height: 84.9vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -166,7 +167,8 @@ nav button {
 
   text-align: left;
 
-  animation: fadeinHeader 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms;
+  opacity: 0;
+  animation: fadeinHeader 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms forwards;
 
 }
 
@@ -185,21 +187,21 @@ nav button {
 
   box-shadow: 0px 0rem 1rem var(--clr-translucent);
 
-  cursor: pointer;
-  transition: all 200ms cubic-bezier(0, 0, 0.5, 1);
 
-  animation: fadein-leftHeader 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 200ms cubic-bezier(0, 0, 0.5, 1);
+  animation: fadein-leftButton 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms forwards;
 
 }
 
 .main--button:hover,.main--button:focus {
-  transform: translateY(-10px);
-  cursor: pointer;
   box-shadow: 0px 1rem 1.5rem var(--clr-translucent);
 }
 
 
 /* Keyframes*/
+
 @keyframes fadeinHeader {
   from {
     transform: translateY(-16px);
@@ -211,12 +213,12 @@ nav button {
   }
 }
 
-@keyframes fadein-leftHeader {
-  from {
+@keyframes fadein-leftButton {
+  0% {
     transform: translateX(-16px);
     opacity: 0;
   }
-    to {
+    100% {
     transform: translateX(0);
     opacity: 1;
   }
