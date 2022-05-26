@@ -1,3 +1,4 @@
+import Info from "./Info"
 
 export default function Main() {
   return (
@@ -7,6 +8,7 @@ export default function Main() {
         <h1 className="main--header">Make 2022 <br />the year you make <br />an impact</h1>
         <button className="main--button">Become A Volunteer</button>
       </div>
+      <Info />
 
     </div>
   )
