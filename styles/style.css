@@ -199,10 +199,16 @@ nav button {
   box-shadow: 0px 1rem 1.5rem var(--clr-translucent);
 }
 
-.info button {
+.info a {
+  color: #ffffff;
   position: absolute;
-  left: 1rem;
-  bottom: 1rem;
+  left: 2rem;
+  bottom: 2rem;
+
+  transition: 250ms cubic-bezier(0, 0, 0.5, 1);
+}
+.info a:hover,.info a:focus {
+  opacity: 0.8;
 }
 
 
