@@ -1,5 +1,6 @@
 import Head from "next/head"
 
+import Modal from "../components/Modal"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import Main from "../components/Main"
@@ -38,6 +39,7 @@ export default function Home() {
       <meta property="twitter:image" content="https://protectcorals.netlify.appassets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
     </Head>
 
+    <Modal />
     <Banner />
     <Nav />
     <Main />

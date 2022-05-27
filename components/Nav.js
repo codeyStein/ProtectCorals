@@ -1,9 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars
-} from "@fortawesome/free-solid-svg-icons";
+import { FaBars } from "react-icons/fa";
 
 export default function Nav() {
 
@@ -28,7 +25,7 @@ export default function Nav() {
           <a href="#">Join Us</a>
           <a href="#">Contact</a>
       </div>
-      <button className="nav--icon" onClick={toggleLinks}> <FontAwesomeIcon icon={faBars} style={{ fontSize: 40}}/> </button>
+      <button className="nav--icon" onClick={toggleLinks}> <FaBars /> </button>
     </nav>
     
   </div>
