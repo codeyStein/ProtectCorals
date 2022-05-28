@@ -9,7 +9,7 @@ import Modal from "./Modal"
 export default function Info() {
   return (
     <div className="info">
-     <a className="info" onClick={console.log('clicked')}> <FaInfoCircle /> </a>
+     <a onClick={console.log('clicked')}> <FaInfoCircle /> </a>
     </div>
   )
 }

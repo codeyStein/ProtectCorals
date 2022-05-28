@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <div className="nav">
       <nav>
-      <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48"/> </a>
+      <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48" loading="lazy"/> </a>
       <div className="nav--list" id={linksVisible ? "hidden" : ""}>
           <a href="#">Home</a>
           <a href="#">About Us</a>

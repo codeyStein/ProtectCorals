@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import styles from "../styles/Modal.module.css"
 import { 
   FaEnvelope,
   FaFacebookSquare,
@@ -11,9 +12,10 @@ export default function Modal() {
   const modalLogo = "/images/logo-modal.png"
 
   return (
-    <div className="modal">
+    <div className={styles.modal}>
 
     <div className="modal--container">
+
       <Image src={modalLogo} alt="ProtectCorals Info Modal Logo" width="361" height="312"/>
 
       <h1>Contact Us</h1>
@@ -28,7 +30,7 @@ export default function Modal() {
         <p> <FaEnvelope /> PROTECTCORALS0418@GMAIL.COM </p>
       </div>
 
-    <button>Got It!</button>
+      <button>Got It!</button>
 
     </div>
 
