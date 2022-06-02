@@ -224,6 +224,7 @@ nav {
 .notfound--container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .notfound--container div {
@@ -254,6 +255,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  width: 100%;
 }
 
 
@@ -338,24 +340,68 @@ nav {
 
 
 @media screen and (max-width: 960px) {
-    .notfound--container {
-      align-items: flex-start;
-    }
-    .notfound--container div {
-      align-items: flex-start;
-    }
 
     .notfound--container div h1 {
       font-size: 9rem;
-      text-align: left;
     }
 
-    .notfound--container div p {
-      text-align: left;
-    }
 
-    .notfound--container div div {
-      align-items: flex-start;
-    }
+
+}
+
+@media screen and (max-width: 710px) {
+
+  .notfound--container div h1 {
+    font-size: 7rem;
+  }
+
+  .notfound--container div p {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 710px) {
+
+  .notfound--container div h1 {
+    font-size: 7rem;
+  }
+
+  .notfound--container div p {
+    font-size: 1.5rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 530px) {
+
+  .notfound--container div h1 {
+    font-size: 5rem;
+  }
+
+  .notfound--container div p {
+    font-size: 1rem;
+  }
+
+  .notfound--container div div {
+    transform: scale(0.7);
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .notfound--container div h1 {
+    font-size: 3rem;
+  }
+
+  .notfound--container div p {
+    font-size: 1rem;
+  }
+
+  .notfound--container div div {
+    transform: scale(0.5);
+  }
 
 }
