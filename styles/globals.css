@@ -49,7 +49,7 @@ body {
   width: 15rem;
 
   font-size: 1rem;
-
+  
   border: 1px solid var(--clr-black);
   border-radius: 10px;
   background-color: transparent;
@@ -217,6 +217,37 @@ nav button {
 }
 
 
+/* 404 error page */
+.notfound--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound--container h1 {
+  color: #3B66CE;
+  font-size: 12rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.notfound--container p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.notfound--container div div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+
+
 /* Keyframes*/
 
 @keyframes fadeinHeader {
@@ -277,5 +308,23 @@ nav button {
     width: 12rem;
     font-size: 1rem;   
   }
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .notfound--container {
+      align-items: flex-start;
+      margin-left: 2rem;
+    }
+
+    .notfound--container h1 {
+      font-size: 9rem;
+    }
+
+    .notfound--container div div {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
 
 }

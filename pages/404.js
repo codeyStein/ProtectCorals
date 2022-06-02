@@ -22,6 +22,7 @@ export default function Home() {
     <Nav />
 
     <div className="notfound--container">
+    <div>
 
       <h1 className="notfound--header">404 Error</h1>
       <p className="notfound--paragraph">This page is lost at sea...</p>
@@ -34,6 +35,8 @@ export default function Home() {
           <ButtonCTA label="Shop"/>
         </Link>
       </div>
+    </div>
+
 
     </div>
 

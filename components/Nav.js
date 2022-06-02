@@ -25,22 +25,22 @@ export default function Nav() {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <Link href="/">
+      <Link href="/about">
         <a>About Us</a>
       </Link>
       <Link href="/shop">
         <a>Shop</a>   
       </Link>
-      <Link href="/">
+      <Link href="/donate">
         <a>Donate</a>
       </Link>
-      <Link href="/">
+      <Link href="/joinus">
         <a>Join Us</a>        
       </Link>
-      <Link href="/">
+      <Link href="/contact">
        <a>Contact</a>
       </Link>
-      
+
 </div>
 
 

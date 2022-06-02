@@ -8,24 +8,3 @@
   */
 
 
-.notfound--container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.notfound--container h1 {
-  color: #3B66CE;
-  font-size: 12rem;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-.notfound--container p {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  margin-top: 0;
-}
-
