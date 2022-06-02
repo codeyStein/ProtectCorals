@@ -20,7 +20,7 @@ export default function Home() {
 
     <Banner />
     <Nav />
-
+ 
     <div className="notfound--container">
     <div>
 
@@ -28,12 +28,8 @@ export default function Home() {
       <p className="notfound--paragraph">This page is lost at sea...</p>
 
       <div className="buttons--nav">
-        <Link href="/">
-        <ButtonCTA label="Home"/>
-        </Link>
-        <Link href="/shop">
-          <ButtonCTA label="Shop"/>
-        </Link>
+        <ButtonCTA label="Home" clickHandler="/"/>
+        <ButtonCTA label="Shop" clickHandler="/shop"/>
       </div>
     </div>
 
