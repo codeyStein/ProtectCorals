@@ -1,0 +1,31 @@
+  /*
+   Color Variables
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-blue: #3B66CE;
+  --clr-blue-light: #C6D8FC;
+  --clr-translucent: rgba(0, 0, 0, 0.25);
+  */
+
+
+.notfound--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound--container h1 {
+  color: #3B66CE;
+  font-size: 12rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.notfound--container p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
