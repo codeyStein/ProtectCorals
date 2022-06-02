@@ -18,9 +18,9 @@ export default function Nav() {
       <nav>
       <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48" loading="lazy"/> </a>
       <div className="nav--list" id={linksVisible ? "hidden" : ""}>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="#">About Us</a>
-          <a href="#">Shop</a>
+          <a href="/shop">Shop</a>
           <a href="#">Donate</a>
           <a href="#">Join Us</a>
           <a href="#">Contact</a>
