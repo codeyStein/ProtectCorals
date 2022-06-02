@@ -6,10 +6,10 @@ import {
 
 import Modal from "./Modal"
 
-export default function Info() {
+export default function Info(props) {
   return (
     <div className="info">
-     <a onClick={console.log('clicked')}> <FaInfoCircle /> </a>
+     <a onClick={console.log(props.show)}> <FaInfoCircle /> </a>
     </div>
   )
 }

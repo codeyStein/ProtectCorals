@@ -1,4 +1,44 @@
+/* Color Variables
+
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-blue: #3B66CE;
+  --clr-blue-light: #C6D8FC;
+  --clr-translucent: rgba(0, 0, 0, 0.25);
+
+*/
+
 .modal {
+  position: absolute;
+
   width: 100%;
   height: 100%;
+
+  background-color: #00000080;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99;
+}
+
+.modalContainer {
+  background-color: #fff;
+
+  width: 30%;
+  height: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2rem;
+}
+
+.modalImage {
+  width: 50%;
+  height: 50%;
 }

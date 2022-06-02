@@ -8,15 +8,15 @@ import {
   FaWhatsappSquare
 } from "react-icons/fa";
 
-export default function Modal() {
+export default function Modal(props) {
   const modalLogo = "/images/logo-modal.png"
 
   return (
     <div className={styles.modal}>
 
-    <div className="modal--container">
+    <div className={styles.modalContainer}>
 
-      <Image src={modalLogo} alt="ProtectCorals Info Modal Logo" width="361" height="312"/>
+      <Image src={modalLogo} alt="ProtectCorals Info Modal Logo" width="361" height="312" className={styles.modalImage}/>
 
       <h1>Contact Us</h1>
       
@@ -30,7 +30,7 @@ export default function Modal() {
         <p> <FaEnvelope /> PROTECTCORALS0418@GMAIL.COM </p>
       </div>
 
-      <button>Got It!</button>
+      <button onClick={console.log(props.showModal)}>Got It!</button>
 
     </div>
 
