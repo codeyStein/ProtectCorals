@@ -20,8 +20,6 @@ export default function Nav() {
       <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48" loading="lazy"/> </a>
       <div className="nav--list" id={linksVisible ? "hidden" : ""}>
 
-<div>
-
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -40,8 +38,6 @@ export default function Nav() {
       <Link href="/contact">
        <a>Contact</a>
       </Link>
-
-</div>
 
 
 
