@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { FaBars } from "react-icons/fa";
 
 export default function Nav() {
@@ -18,12 +19,32 @@ export default function Nav() {
       <nav>
       <a className="nav--logo" href="#" > <Image src={navImage} alt="ProtectCorals Navbar Logo" width="182" height="48" loading="lazy"/> </a>
       <div className="nav--list" id={linksVisible ? "hidden" : ""}>
-          <a href="/">Home</a>
-          <a href="#">About Us</a>
-          <a href="/shop">Shop</a>
-          <a href="#">Donate</a>
-          <a href="#">Join Us</a>
-          <a href="#">Contact</a>
+
+<div>
+
+      <Link href="/">
+        <a>Home</a>
+      </Link>
+      <Link href="/">
+        <a>About Us</a>
+      </Link>
+      <Link href="/shop">
+        <a>Shop</a>   
+      </Link>
+      <Link href="/">
+        <a>Donate</a>
+      </Link>
+      <Link href="/">
+        <a>Join Us</a>        
+      </Link>
+      <Link href="/">
+       <a>Contact</a>
+      </Link>
+      
+</div>
+
+
+
       </div>
       <button className="nav--icon" onClick={toggleLinks}> <FaBars /> </button>
     </nav>
