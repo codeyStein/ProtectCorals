@@ -88,11 +88,13 @@ nav {
   margin-left: 2rem;
 }
 
-nav button {
+.nav nav button {
   font-size: 40PX;
+  color: var(--clr-blue);
   display: none;
   background-color: transparent;
   border: 0px solid transparent;
+
 }
 
 .nav--list a:hover,.nav--list a:focus {
@@ -115,7 +117,7 @@ nav button {
 }
 
 @media screen and (max-width: 900px) {
-  nav button {
+  .nav nav button {
     display: flex;
     margin-right: 2rem;
   } 
@@ -209,7 +211,7 @@ nav button {
 }
 .info a {
   font-size: 45px;
-  color: #ffffff;
+  color: var(--clr-white);
 
   transition: 250ms cubic-bezier(0, 0, 0.5, 1);
 }
@@ -221,23 +223,29 @@ nav button {
 /* 404 error page */
 .notfound--container {
   display: flex;
+  justify-content: center;
+}
+
+.notfound--container div {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.notfound--container h1 {
-  color: #3B66CE;
+.notfound--container div h1 {
+  color: var(--clr-blue);
   font-size: 12rem;
   font-weight: 700;
   margin-bottom: 0;
 }
 
-.notfound--container p {
-  color: #fff;
+.notfound--container div p {
+  color: var(--clr-white);
   font-size: 2rem;
   font-weight: 500;
   margin-top: 0;
+  text-align: center;
 }
 
 .notfound--container div div {
@@ -245,7 +253,7 @@ nav button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 30rem;
+  gap: 2rem;
 }
 
 
@@ -286,6 +294,7 @@ nav button {
     height: 2rem;
     width: 10rem;
     font-size: 0.7rem;   
+    color: var(--clr-black);
   }
 }
 
@@ -331,16 +340,22 @@ nav button {
 @media screen and (max-width: 960px) {
     .notfound--container {
       align-items: flex-start;
-      margin-left: 2rem;
+    }
+    .notfound--container div {
+      align-items: flex-start;
     }
 
-    .notfound--container h1 {
+    .notfound--container div h1 {
       font-size: 9rem;
+      text-align: left;
+    }
+
+    .notfound--container div p {
+      text-align: left;
     }
 
     .notfound--container div div {
       align-items: flex-start;
-      justify-content: flex-start;
     }
 
 }
