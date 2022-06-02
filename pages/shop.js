@@ -15,7 +15,7 @@ export default function Shop() {
 
   const showcase = showcaseData.map(item => {
     return (
-      <img key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcase}/>
+      <img key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
     )
   })
 
@@ -27,7 +27,10 @@ export default function Shop() {
 
 
     <h1 className={styles.header}> Shop </h1>
-    {showcase}
+
+    <div className={styles.showcase}>
+      {showcase}
+    </div>
 
       
     <Head>
