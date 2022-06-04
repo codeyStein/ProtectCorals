@@ -4,7 +4,7 @@ import Image from "next/image"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import styles from "../styles/Shop.module.css"
-import showcaseData from "../data/showcase"
+import showcaseData from "../data/showcase.ts"
 import cardData from "../data/card"
 
 export default function Shop() {
@@ -12,7 +12,9 @@ export default function Shop() {
 
   const showcase = showcaseData.map(item => {
     return (
-      <img key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
+      <img style={{
+        animationDelay: `${item.delay}ms`
+      }} key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
     )
   })
 
