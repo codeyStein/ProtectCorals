@@ -12,9 +12,7 @@ export default function Shop() {
 
   const showcase = showcaseData.map(item => {
     return (
-      <img style={{
-        animationDelay: `${item.delay}ms`
-      }} key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
+      <img style={{ animationDelay: `${item.delay}ms` }} key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
     )
   })
 
