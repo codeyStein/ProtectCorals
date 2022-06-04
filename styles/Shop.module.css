@@ -27,6 +27,8 @@
   width: 200px;
   height: 200px;
 
+  opacity: 0;
+
   animation: fadeinShowcase 1000ms cubic-bezier(0, 0, 0.5, 1) 300ms forwards;
 
 }
@@ -60,4 +62,41 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 30rem;
+  height: 40rem;
+
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.product h2 {
+  color: #3B66CE;
+  font-size: 3rem;
+}
+
+.product p {
+  color: #C6D8FC;
+  font-size: 2rem;
+}
+
+.product img {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.products {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

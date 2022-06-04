@@ -10,13 +10,20 @@ import cardData from "../data/card"
 export default function Shop() {
 
 
-  console.log(showcaseData)
-  console.log(cardData)
-
   const showcase = showcaseData.map(item => {
     return (
       <img key={item.id} src={item.imageUrl} alt={`${item.alt} ${item.id}`}  className={styles.showcaseItem}/>
     )
+  })
+
+  const products = cardData.map(product => {
+      return (
+        <div key={product.id} className={styles.product}>
+          <img src={product.imageUrl} alt={product.alt}/>
+          <h2>{product.label}</h2>
+          <p>{product.price === null ? `COMING SOON` : `$${product.price}`}</p>
+        </div>
+      )
   })
 
   return (
@@ -30,6 +37,10 @@ export default function Shop() {
 
     <div className={styles.showcase}>
       {showcase}
+    </div>
+
+    <div className={styles.products}>
+      {products}
     </div>
 
       
