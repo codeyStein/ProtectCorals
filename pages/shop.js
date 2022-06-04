@@ -5,7 +5,7 @@ import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import styles from "../styles/Shop.module.css"
 import showcaseData from "../data/showcase.ts"
-import cardData from "../data/card"
+import cardData from "../data/card.ts"
 
 export default function Shop() {
 
@@ -18,7 +18,7 @@ export default function Shop() {
 
   const products = cardData.map(product => {
       return (
-        <div key={product.id} className={styles.product}>
+        <div style={{ animationDelay: `${product.delay}ms` }} key={product.id} className={styles.product}>
           <img src={product.imageUrl} alt={product.alt}/>
           <h2>{product.label}</h2>
           <p>{product.price === null ? `COMING SOON` : `$${product.price}`}</p>
