@@ -32,16 +32,16 @@ export default function Shop() {
     <Banner />
     <Nav />
 
+      <h1 className={styles.header}> Shop </h1>
 
-    <h1 className={styles.header}> Shop </h1>
+      <div className={styles.showcase}>
+        {showcase}
+      </div>
 
-    <div className={styles.showcase}>
-      {showcase}
-    </div>
+      <div className={styles.products}>
+        {products}
+      </div>
 
-    <div className={styles.products}>
-      {products}
-    </div>
 
       
     <Head>

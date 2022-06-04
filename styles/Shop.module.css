@@ -11,10 +11,12 @@
   color: #3B66CE;
 
   font-weight: 500;
-  font-size: calc(0.75rem + 5vmin);
+  font-size: 8rem;
   margin-bottom: 1rem;
-  
-  width: 100%;
+
+
+  margin-left: 2rem;
+  margin-bottom: 5rem;
   
   text-align: left;
   
@@ -101,4 +103,36 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+@media screen and (max-width: 614px) {
+
+  .showcase {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .product {
+    width: 22rem;
+    height: 32rem;
+  }
+  .product img {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .product {
+    width: 19rem;
+    height: 32rem;
+  }
+  .product img {
+    margin-top: 0;
+  }
+
 }
