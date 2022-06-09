@@ -27,10 +27,16 @@ export default function Home() {
 
     <div className="Index">
 
-    <Modal isOpen={showModal} shouldCloseOnOverlayClick onRequestClose={() => setShowModal(false)} >
+    <Modal
+      className="Modal"
+      overlayClassName="Overlay"
+      isOpen={showModal}
+      shouldCloseOnOverlayClick
+      onRequestClose={() => setShowModal(false)} 
+    >
       <Image src={modalLogo} alt="ProtectCorals Info Modal Logo" width="361" height="312" className="modal__image"/>
 
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
 
       <div className="list--socials">
         <a href="https://www.facebook.com/protectcorals/"> <FaFacebookSquare /></a>
@@ -38,8 +44,8 @@ export default function Home() {
       </div>
 
       <div className="list--contact">
-        <p> <FaWhatsappSquare /> +503 7648-7592</p>
-        <p> <FaEnvelope /> PROTECTCORALS0418@GMAIL.COM </p>
+        <p><i><FaWhatsappSquare /></i> +503 7648-7592</p>
+        <p> <i><FaEnvelope /></i> PROTECTCORALS0418@GMAIL.COM </p>
       </div>
 
       <button onClick={() => setShowModal(false)}>Got It!</button>

@@ -1,40 +1,158 @@
-/* Color Variables
 
+:root {
   --clr-black: #000;
   --clr-white: #fff;
   --clr-blue: #3B66CE;
   --clr-blue-light: #C6D8FC;
-  --clr-translucent: rgba(0, 0, 0, 0.25);
-
-*/
+  --clr-translucent: #00000080;
+}
 
 .Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--clr-translucent);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  z-index: 99;
+  z-index: 1000;
 }
 
 .Modal {
-  background-color: #fff;
+  background-color: var(--clr-white);
+  color: var(--clr-blue);
 
   width: 30%;
-  height: 70%;
+  height: 90%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  border-radius: 2rem;
+  border-radius: 1rem;
+}
+
+.Modal h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 0 0;
+  margin-top: 1rem;
+}
+
+.Modal div a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--clr-blue);
+}
+
+.Modal .list--socials {
+  display: flex;
+  flex-direction: row;
+}
+
+.Modal .list--contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Modal .list--contact p:last-child {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.Modal div p {
+  font-size: 2rem;
+}
+
+.Modal button {
+  width: 13rem;
+  height: 3rem;
+
+  background-color: var(--clr-blue);
+
+  border: none;
+  border-radius: 1rem;
+
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  box-shadow: 0px 0.5rem 0.5rem rgba(59, 102, 206, 0.3);
 }
 
 .modal__image {
   width: 50%;
   height: 50%;
+}
+
+
+@media screen and (max-width: 1900px) {
+  .Modal {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .Modal {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .Modal {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Modal {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .Modal h2 {
+    font-size: 2.5rem;
+  }
+  .Modal div p {
+    font-size: 1.5rem;
+  }
+  .Modal .list--contact p:last-child {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
+  .modalImage {
+    width: 35%;
+    height: 35%;
+  }
+}
+
+@media screen and (max-height: 815px) {
+  .Modal button {
+    border-radius: 0.4rem;
+    width: 10rem;
+  }
+  .Modal {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .Modal div p:first-child {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .Modal div p:last-child {
+    margin-bottom: 2rem;
+  }
 }
