@@ -19,7 +19,7 @@ import {
 Modal.setAppElement(".Index")
 export default function Home() {
 
-  const [showModal, setShowModal] = React.useState(true)
+  const [showModal, setShowModal] = React.useState(false)
 
   const modalLogo = "/images/logo-modal.png"
 
