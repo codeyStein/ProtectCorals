@@ -87,6 +87,8 @@
   font-weight: 400;
 
   box-shadow: 0px 0.5rem 0.5rem rgba(59, 102, 206, 0.3);
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .modal__image {
@@ -94,7 +96,15 @@
   height: 50%;
 }
 
+/* HOVER STATES */
+.Modal button:hover, .Modal button:focus {
+  opacity: 0.9;
+  transform: translateY(-0.5rem);
+  box-shadow: 0px 1rem 0.5rem rgba(59, 102, 206, 0.3);
+}
 
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1900px) {
   .Modal {
     width: 40%;
