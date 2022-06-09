@@ -4,8 +4,8 @@ import Image from "next/image"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import styles from "../styles/Shop.module.css"
-import showcaseData from "../data/showcase.ts"
-import cardData from "../data/card.ts"
+import showcaseData from "../data/showcase"
+import cardData from "../data/card"
 
 export default function Shop() {
 

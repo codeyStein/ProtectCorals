@@ -1,5 +1,6 @@
 import "../styles/globals.css"
 import "../styles/notfound.css"
+import "../styles/modal.css"
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;

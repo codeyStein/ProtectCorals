@@ -7,9 +7,12 @@ import {
 import Modal from "./Modal"
 
 export default function Info(props) {
+
+  let modalShown = true
+
   return (
     <div className="info">
-     <a onClick={console.log(props.show)}> <FaInfoCircle /> </a>
+     <a onClick={props.openModal}> <FaInfoCircle /> </a>
     </div>
   )
 }
