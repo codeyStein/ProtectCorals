@@ -16,7 +16,6 @@ import {
 } from "react-icons/fa";
 
 
-Modal.setAppElement(".Index")
 export default function Home() {
 
   const [showModal, setShowModal] = React.useState(false)
