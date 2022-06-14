@@ -20,6 +20,7 @@ body {
   scroll-behavior: smooth;
 
   background-color: var(--clr-blue-light);
+	overflow-x: hidden;
 }
 
 * {
@@ -27,6 +28,12 @@ body {
 }
 
 
+.about--wave {
+	margin-top: -8rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 /* Banner Styles*/
 .banner {

@@ -20,7 +20,9 @@ export default function Home() {
 
   const [showModal, setShowModal] = React.useState(false)
 
-  const modalLogo = "/images/logo-modal.png"
+	const modalLogo = "/images/logo-modal.png"
+
+	const aboutWave = "/images/about/wave.svg"
 
   return (
 
@@ -53,7 +55,8 @@ export default function Home() {
     <Info openModal={() => setShowModal(true)}/>
     <Banner />
     <Nav />
-    <Main/>
+		<Main/>
+    <img src={aboutWave} class="about--wave"/>
 
     <Head>
       {/* Fonts */}

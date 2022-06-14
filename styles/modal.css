@@ -7,6 +7,14 @@
   --clr-translucent: #00000080;
 }
 
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+ReactModal__Overlay--after-open {
+	overflow: hidden;
+}
+
 .Overlay {
   position: absolute;
   top: 0;
