@@ -6,7 +6,9 @@ import Info from "../components/Info"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import Main from "../components/Main"
+import About from "../components/About"
 import React from "react"
+import ReactDOM from "react-dom"
 
 import { 
   FaEnvelope,
@@ -18,11 +20,14 @@ import {
 
 export default function Home() {
 
-  const [showModal, setShowModal] = React.useState(false)
+	const [showModal, setShowModal] = React.useState(true)
 
 	const modalLogo = "/images/logo-modal.png"
 
-	const aboutWave = "/images/about/wave.svg"
+React.useEffect(() => {
+  showModal ? document.body.classList.add('ReactModal__Body--open') : document.body.classList.remove('ReactModal__Body--open')
+}, [showModal])
+
 
   return (
 
@@ -34,7 +39,7 @@ export default function Home() {
       isOpen={showModal}
       shouldCloseOnOverlayClick
       onRequestClose={() => setShowModal(false)} 
-    >
+  >
       <Image src={modalLogo} alt="ProtectCorals Info Modal Logo" width="361" height="312" className="modal__image"/>
 
       <h2>Contact Us</h2>
@@ -52,12 +57,11 @@ export default function Home() {
       <button onClick={() => setShowModal(false)}>Got It!</button>
     </Modal>  
 
-    <Info openModal={() => setShowModal(true)}/>
     <Banner />
     <Nav />
-		<Main/>
-    <img src={aboutWave} class="about--wave"/>
-
+    <Main openModal={() => setShowModal(true)} />
+		<About />
+		
     <Head>
       {/* Fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
