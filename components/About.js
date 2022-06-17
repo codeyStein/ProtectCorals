@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 
 export default function About() {
 
@@ -12,7 +13,9 @@ export default function About() {
 				<p>
 					We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources.....
 				</p>
-				<button>Learn More...</button>
+				<Link href="/about">
+					<button>Learn More...</button>
+				</Link>
 			</div>
 		</div>
 	)
