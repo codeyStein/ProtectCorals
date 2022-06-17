@@ -6,8 +6,10 @@ export default function About() {
 
 	return (
 		<div className="About">
-			<h1>About section! </h1>
 			<img src={wave} alt="about section divder" className="about--wave" />
+			<div className="about--container">
+				<h2>About Section!</h2>
+			</div>
 		</div>
 	)
 }
