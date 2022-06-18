@@ -84,6 +84,38 @@ body {
   z-index: 10;
 }
 
+
+
+@media screen and (max-width: 1192px) {
+  .about--wave {
+    margin-top: -17rem;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  .about--wave {
+    margin-top: -18rem;
+  }
+  .About p {
+    font-size: 1.5rem;
+    width: 85%;
+
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .About p {
+  font-size: 1rem
+ }
+}
+
+@media screen and (max-height: 779px) {
+  .about--wave {
+    margin-top: -16rem;
+    height: 100%;
+  }
+}
+
 .about--wave::selection {
   background: none;
 }
@@ -327,7 +359,7 @@ nav {
 @keyframes fadeinHeader {
   from {
     transform: translateY(-16px);
-    opacity: 0;
+    opacity: 0
   }
     to {
     transform: translateY(0);
