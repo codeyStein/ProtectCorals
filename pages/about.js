@@ -1,8 +1,8 @@
+
 import Head from "next/head"
 
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
-import ButtonCTA from "../components/ButtonCTA"
 import React from "react"
 
 
@@ -10,24 +10,13 @@ export default function Home() {
 
   return (
 
-    <div className="Notfound">
+    <div className="aboutPage">
 
     <Banner />
     <Nav />
  
-    <div className="notfound--container">
-    <div>
-
-      <h1 className="notfound--header">404 Error</h1>
-      <p className="notfound--paragraph">This page is lost at sea...</p>
-
-      <div className="buttons--nav">
-        <ButtonCTA label="Home" clickHandler="/"/>
-        <ButtonCTA label="Shop" clickHandler="/shop"/>
-      </div>
-    </div>
-
-
+    <div className="about--container">
+      <h1>About</h1>
     </div>
 
     
@@ -40,8 +29,8 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
       {/* Primary Meta Tags */}
-      <title>404 Not Found</title>
-      <meta name="title" content="Protect Corals - Unknown Page" />
+      <title>ProtectCorals - About</title>
+      <meta name="title" content="ProtectCorals - About" />
       <meta name="description" content="Make 2022 the year you make a difference" />
 
       {/* Open Graph / Facebook */}
