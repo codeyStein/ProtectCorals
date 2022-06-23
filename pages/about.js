@@ -8,15 +8,29 @@ import React from "react"
 
 export default function Home() {
 
+const aboutPictre = "./images/about/pictureTwo.png";
+const missionPicture = "./images/about/pictureOne.png"; 
+
   return (
 
-    <div className="aboutPage">
+    <div className="About">
 
     <Banner />
     <Nav />
  
+    <div className="about--main">
+
     <div className="about--container">
       <h1>About</h1>
+      <p>We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources. We are committed to hindering the planet’s environment crisis and protecting local species which currently face endangerment. Protect corals was founded on the belief that a single group of people, collectively, can make a significant change on the preservation of the planet. As all participants aim to improveour environmental and social situation. </p>
+      <img src={aboutPictre} alt="About image" />
+    </div>
+    <div className="mission--container">
+      <h1>Mission</h1>
+      <p>We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources. We are committed to hindering the planet’s environment crisis and protecting local species which currently face endangerment. Protect corals was founded on the belief that a single group of people, collectively, can make a significant change on the preservation of the planet. As all participants aim to improveour environmental and social situation. </p>
+      <img src={missionPicture} alt="Mission image" />
+    </div>
+
     </div>
 
     

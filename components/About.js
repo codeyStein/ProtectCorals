@@ -6,7 +6,7 @@ export default function About() {
 	const wave = "./images/about/wave.svg"
 
 	return (
-		<div className="About">
+		<div className="AboutHero">
 			<img src={wave} alt="about section divder" className="about--wave" draggable={false}/>
 			<div className="about--container">
 				<h2>About</h2>
