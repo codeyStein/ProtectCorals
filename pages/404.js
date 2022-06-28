@@ -3,6 +3,7 @@ import Head from "next/head"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import ButtonCTA from "../components/ButtonCTA"
+import Button from "../components/Button"
 import React from "react"
 
 
@@ -24,6 +25,7 @@ export default function Home() {
       <div className="buttons--nav">
         <ButtonCTA label="Home" clickHandler="/"/>
         <ButtonCTA label="Shop" clickHandler="/shop"/>
+        <Button outline={true} color="white">Awesome Button</Button>
       </div>
     </div>
 
