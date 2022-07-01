@@ -25,7 +25,7 @@ export default function Home() {
       <div className="buttons--nav">
         <ButtonCTA label="Home" clickHandler="/"/>
         <ButtonCTA label="Shop" clickHandler="/shop"/>
-        <Button outline={false} color="blue">Awesome Button</Button>
+        {/* <Button outline={false} color="blue">Awesome Button</Button> */}
       </div>
     </div>
 
