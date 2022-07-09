@@ -1,5 +1,56 @@
 
 .button {
-  background: #ff0000;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.25rem;
+  padding: 20px 50px;
+  border-radius: 1rem;
+  transition: 500ms cubic-bezier(0, 1, 1, 1);
+}
+
+.outline {
+  background: none;
+  box-sizing: border-box;
+}
+
+.fill {
+  border: none;
+}
+
+.blue__outline {
+  border: 5px solid #3B66CE;
+  color: #3B66CE;
+}
+
+.white__outline {
+  border: 5px solid #fff;
+  color: #fff;
+}
+
+.blue__filled {
+  background: #3B66CE;
+  color: #fff;
+  box-shadow: 0px 7px 15px #3B66CE80;
+}
+
+.white__filled{
+  background: #fff;
+  color: #3B66CE;
+  box-shadow: 0px 10px 20px #0000001e;
+}
+
+.blue__filled:hover {
+  transform: translateY(-0.25rem); 
+  box-shadow: 0px 10px 20px #3B66CE80;
+}
+
+.white__filled:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 10px 20px #0000002e;
+}
+
+
+.outline:hover {
+  transform: scale(1.025)
 }
 

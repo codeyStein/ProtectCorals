@@ -77,7 +77,7 @@
 }
 
 .about--wave {
-	margin-top: -24rem;
+	margin-top: -17rem;
 	position: absolute;
 	left: 50%;
   transform: translateX(-50%);
@@ -88,33 +88,39 @@
 
 
 
-@media screen and (max-width: 1192px) {
+@media screen and (max-height: 1368px) {
   .about--wave {
-    margin-top: -17rem;
+    margin-top: -20rem;
   }
 }
 
-@media screen and (max-width: 916px) {
+@media screen and (max-height: 1215px) {
+  .about--wave {
+    margin-top: -23rem; 
+  }
+}
+
+@media screen and (max-height: 915px) {
+  .about--wave {
+    margin-top: -20rem;
+  }
+}
+
+@media screen and (max-height: 900px) {
   .about--wave {
     margin-top: -18rem;
   }
-  .AboutHero p {
-    font-size: 1.5rem;
-    width: 85%;
+}
 
+@media screen and (max-height: 750px) {
+  .about--wave {
+    margin-top: -15rem;
   }
 }
 
-@media screen and (max-width: 593px) {
-  .AboutHero p {
-  font-size: 1rem
- }
-}
-
-@media screen and (max-height: 779px) {
+@media screen and (max-height: 670px) {
   .about--wave {
-    margin-top: -16rem;
-    height: 100%;
+    margin-top: -14rem;
   }
 }
 

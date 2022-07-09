@@ -1,29 +1,17 @@
 import React from "react"
+import styles from "../styles/Button.module.css"
 
 export default function Button(props) {
 
 
-const style = {
-cursor: "pointer",
-padding: "20px 50px",
-borderRadius: "15px",
-fontSize: "1.25rem",
-fontFamily:"poppins",
-background: props.outline ? "transparent"
-					  : props.color==="blue" ? "#3B66CE" 
-						: "#fff",
-border: props.color==="white" && props.outline ? "1px solid #fff"
-				 : props.color==="blue" && props.outline ? "1px solid #3B66CE" 
-			   : "none",
-color: props.color==="white" && props.outline ? "#fff"
-			 : props.color==="blue" && props.outline ? "#3B66CE"
-			 : props.color==="blue" && props.outline===false ? "#fff"
-			 : "#3B66CE"
-
-}
-
-	return (
-		<button style={style}>{props.children}</button>
+return (
+<button onClick={props.clickHandler} className={`
+		${styles.button} 
+		${props.outline && styles.outline}
+		${props.outline===false && styles.fill}
+		${props.color==="blue" && props.outline ? styles.blue__outline :  props.color==="white" && props.outline ? styles.white__outline : null}
+		${props.color==="blue" && props.outline===false ? styles.blue__filled : props.color==="white" && props.outline===false ? styles.white__filled : null}
+`}>{props.children}</button>
  )
 }
 
