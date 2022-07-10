@@ -18,23 +18,28 @@ const missionPicture = "./images/about/pictureOne.png";
     <Banner />
     <Nav />
  
-    <div className="about--main">
+    <div className="wrapper">
+      <div className="about__container">
 
-    <div className="about--container">
-      <h1>About</h1>
-      <img src={aboutPictre} alt="About image" />
-      <p>We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources. We are committed to hindering the planet’s environment crisis and protecting local species which currently face endangerment. Protect corals was founded on the belief that a single group of people, collectively, can make a significant change on the preservation of the planet. As all participants aim to improveour environmental and social situation. </p>
-    </div>
-    <div className="mission--container">
-      <h1>Mission</h1>
-      <img src={missionPicture} alt="Mission image" />
-      <p>We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources. We are committed to hindering the planet’s environment crisis and protecting local species which currently face endangerment. Protect corals was founded on the belief that a single group of people, collectively, can make a significant change on the preservation of the planet. As all participants aim to improveour environmental and social situation. </p>
-    </div>
+        <div className="about__container--content">
+          <div> 
+            <h1>About</h1>
+            <p>We are a group of high school student on a mission to help mitigate our planet’s climate crisis, as well as aid communities which are in need of resources. We are committed to hindering the planet’s environment crisis and protecting local species which currently face endangerment. Protect corals was founded on the belief that a single group of people, collectively, can make a significant change on the preservation of the planet. As all participants aim to improveour environmental and social situation. </p>
+          </div>
 
-    </div>
+          <div>
+            <h1>Mission</h1>
+            <p>We have partnered with local environmentalists that dedicate their service to the conservation of marine life and the spread of awareness about the potential threats to endangered species. We contribute by organizing various activities, such as beach cleanups and turtle releases, that aid the environment and raise funds simultaneously. We also aim to prevent plastic pollution at its source by educating people about the worldwide effect of single-use plastics and empower them to reduce their plastic use.</p>
+          </div>
+        </div>
 
-    
-    
+          <div className="about__container--images">
+            <img src={aboutPictre}></img>
+            <img src={aboutPictre}></img>
+          </div>
+
+      </div>
+    </div>
 
     <Head>
       {/* Fonts */}
