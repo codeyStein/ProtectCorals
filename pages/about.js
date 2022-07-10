@@ -35,10 +35,10 @@ const missionPicture = "./images/about/pictureOne.png";
 
           <div className="about__container--images">
             <img src={aboutPictre}></img>
-            <img src={aboutPictre}></img>
+            <img src={missionPicture}></img>
           </div>
 
-      </div>
+        </div>
     </div>
 
     <Head>
