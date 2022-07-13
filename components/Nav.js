@@ -13,7 +13,9 @@ export default function Nav() {
     setLinksVisible(prevValue => !prevValue)
     console.log(linksVisible)
   }
-  
+
+  linksVisible ? document.querySelector("body").setAttribute("id", "body--hidden") : ""
+
   return (
     <div className="nav">
       <nav>
@@ -39,9 +41,8 @@ export default function Nav() {
        <a>Contact</a>
       </Link>
 
-
-
       </div>
+      <button id={linksVisible ? "close--active" : null} onClick={toggleLinks} className="close">X</button>
       <button className="nav--icon" onClick={toggleLinks}> <FaBars /> </button>
     </nav>
     
