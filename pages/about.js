@@ -4,12 +4,13 @@ import Head from "next/head"
 import Banner from "../components/Banner"
 import Nav from "../components/Nav"
 import React from "react"
+import Image from "next/image"
 
 
 export default function Home() {
 
-const aboutPictre = "./images/about/pictureTwo.png";
-const missionPicture = "./images/about/pictureOne.png"; 
+const aboutPicture = "/images/about/pictureTwo.png";
+const missionPicture = "/images/about/pictureOne.png"; 
 
   return (
 
@@ -34,7 +35,7 @@ const missionPicture = "./images/about/pictureOne.png";
         </div>
 
           <div className="about__container--images">
-            <img src={aboutPictre}></img>
+            <img src={aboutPicture}></img>
             <img src={missionPicture}></img>
           </div>
 
