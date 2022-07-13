@@ -1,6 +1,9 @@
 
 .about__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   flex-direction: row;
   gap: 10rem;
   margin-top: 5rem;
@@ -12,9 +15,10 @@
   gap: 7rem;
 }
 
-.about--container--images img {
+.about__container--images img {
   width: 640px;
   height: 480px;
+  box-shadow: -20px 20px #3B66CE;
 }
 
 .about__container--content h1 {
@@ -46,6 +50,8 @@
 .wrapper p {
   font-size: 1.25rem;
 }
+
+
 
 /* HERO */
 .AboutHero {
@@ -107,6 +113,80 @@
 
 
 
+@media screen and (max-width: 1560px) {
+  .wrapper div div h1 {
+    font-size: 7rem; 
+  }
+  .wrapper div div p {
+    font-size:  0.8rem;
+  }
+  .about__container {
+    width: 90%;
+  }
+  .about__container--images img {
+    width: 576px;
+    height: 432px;
+  }
+
+}
+
+@media screen and (max-width: 1348px) {
+  .about__container--images img {
+    width: 480px;
+    height: 360px;
+  }
+  .wrapper div div h1 {
+    font-size: 5rem;
+  }
+  .wrapper div div p {
+    font-size: 0.7rem;
+  }
+  .about__container--content {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__container--content {
+    align-items: center;
+    justify-content: center;
+  }
+  .about__container--images img {
+    display: none;
+  }
+  .wrapper div div p {
+    font-size: 1rem
+  }
+  .about__container {
+    width: 100%;
+  }
+  .about__container--images {
+    display: none;
+  }
+  .wrapper {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper div div p {
+    font-size: 0.8rem;
+  }
+  .wrapper div div h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper div div p {
+    font-size: 0.6rem;
+  }
+  .wrapper div div h1 {
+    font-size: 3rem;
+  }
+}
+
+
 @media screen and (max-height: 1368px) {
   .about--wave {
     margin-top: -20rem;
@@ -128,7 +208,7 @@
 @media screen and (max-height: 900px) {
   .about--wave {
     margin-top: -18rem;
-  }
+ }
 }
 
 @media screen and (max-height: 750px) {
@@ -151,4 +231,5 @@
 
 .about--wave::selection {
   background: none;
-}
+ }
+
