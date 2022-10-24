@@ -25,7 +25,7 @@ export default function Modal(props) {
       </div>
 
       <div className="list--contact">
-        <p> <FaWhatsappSquare /> +503 7648-7592</p>
+        <p> <FaWhatsappSquare /> +503 7288-6869</p>
         <p> <FaEnvelope /> PROTECTCORALS0418@GMAIL.COM </p>
       </div>
 
